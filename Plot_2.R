@@ -15,3 +15,8 @@ plot(subpower$Time,as.numeric(as.character(subpower$Global_active_power)),type="
 
 # annotating graph
 title(main="Global Active Power Vs Time")
+
+# saving as png
+png("plot_2.png")
+plot(subpower$Time,as.numeric(as.character(subpower$Global_active_power)),type="l",xlab="",ylab="Global Active Power (kilowatts)") 
+dev.off()
